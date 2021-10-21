@@ -9,9 +9,10 @@ export default class extends AbstractView {
   executeScript() {
     this.cb1 = document.querySelector("#cb1");
     this.cb1.binary = true;
-    this.cb1.label = "Binary";
+    this.cb1.label = false;
     this.cb1.addEventListener("valueChange", (event) => {
       console.log("Checkbox Value changed:", event);
+      this.cb1.label = event.detail.value;
     });
   }
 
@@ -25,7 +26,7 @@ export default class extends AbstractView {
             </div>
             <div class="content-section">
               <div class="full-card">
-                <h5>Basic</h5>
+                <h5>Basic with binary option enabled</h5>
                   <any-checkbox id="cb1"></any-checkbox>
                 <h5>Multiple</h5>
                 <div class="any-field-checkbox">

@@ -27,6 +27,32 @@ const navigateTo = (url) => {
   router();
 };
 
+const addClass = (element, className) => {
+  if (element.classList)
+    element.classList.add(className);
+  else
+    element.className += ' ' + className;
+};
+
+const removeClass = (element, className) => {
+  if (element.classList)
+    element.classList.remove(className);
+  else
+    element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+};
+
+const hideMenu = () => {
+  removeClass(document.body, 'blocked-scroll');
+  removeClass(document.querySelector('.layout-sidebar'), 'active');
+  removeClass(document.querySelector('.layout-mask'), 'layout-mask-active');
+};
+
+const onMenuButtonClick = () => {
+  addClass(document.body, 'blocked-scroll');
+  addClass(document.querySelector('.layout-sidebar'), 'active');
+  addClass(document.querySelector('.layout-mask'), 'layout-mask-active');
+};
+
 const router = () => {
   const routes = [{
       path: "/",
@@ -74,6 +100,7 @@ const router = () => {
   }
   const view = new match.route.view(getParams(match));
 
+
   const menuItems = document.querySelectorAll("[data-link]");
   menuItems.forEach(function (item) {
     item.classList.remove("active");
@@ -91,6 +118,7 @@ const router = () => {
     }
 
     view.executeScript();
+    hideMenu()
   }, 100);
 };
 
@@ -108,6 +136,16 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.classList.add("active");
     }
   });
+
+  let menuButton = document.querySelector('.menu-button');
+  menuButton.onclick = function () {
+    onMenuButtonClick();
+  };
+
+  let mask = document.querySelector('.layout-mask');
+  mask.onclick = function () {
+    hideMenu();
+  };
 
   router();
 });

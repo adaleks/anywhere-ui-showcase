@@ -53,52 +53,52 @@ defineCustomElements();
 
 </code></pre>
             <h6>Browser Support</h6>
-              <div class="doc-tablewrapper">
-                  <table class="doc-table browsers">
-                      <thead>
-                          <tr>
-                              <th>
-                                  <div class="any-d-flex any-ai-center">
-                                      <img src="assets/images/browsers/edge.png" alt="edge" style="width: 1.5rem;" class="any-mr-2">
-                                      IE / Edge
-                                  </div>
-                              </th>
-                              <th>
-                                  <div class="any-d-flex any-ai-center">
-                                      <img src="assets/images/browsers/firefox.png" alt="firefox" style="width: 1.5rem;" class="any-mr-2">
-                                      Firefox
-                                  </div>
-                              </th>
-                              <th>
-                                  <div class="any-d-flex any-ai-center">
-                                      <img src="assets/images/browsers/chrome.png" alt="chrome" style="width: 1.5rem;" class="any-mr-2">
-                                      Chrome
-                                  </div>
-                              </th>
-                              <th>
-                                  <div class="any-d-flex any-ai-center">
-                                      <img src="assets/images/browsers/safari.png" alt="safari" style="width: 1.5rem;" class="any-mr-2">
-                                      Safari
-                                  </div>
-                              </th>
-                              <th>
-                                  <div class="any-d-flex any-ai-center">
-                                      <img src="assets/images/browsers/opera.png" alt="opera" style="width: 1.5rem;" class="any-mr-2">
-                                      Opera
-                                  </div>
-                              </th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>IE11, Edge</td>
-                              <td>Last 2 versions</td>
-                              <td>Last 2 versions</td>
-                              <td>Last 2 versions</td>
-                              <td>Last 2 versions</td>
-                          </tr>
-                      </tbody>
-                  </table>
+             <div class="doc-tablewrapper">
+               <table class="doc-table browsers">
+                  <thead>
+                   <tr>
+                     <th>
+                       <div class="any-d-flex any-ai-center">
+                         <img src="assets/images/browsers/edge.png" alt="edge" style="width: 1.5rem;" class="any-mr-2">
+                         IE / Edge
+                       </div>
+                     </th>
+                     <th>
+                       <div class="any-d-flex any-ai-center">
+                         <img src="assets/images/browsers/firefox.png" alt="firefox" style="width: 1.5rem;" class="any-mr-2">
+                         Firefox
+                       </div>
+                     </th>
+                     <th>
+                       <div class="any-d-flex any-ai-center">
+                         <img src="assets/images/browsers/chrome.png" alt="chrome" style="width: 1.5rem;" class="any-mr-2">
+                         Chrome
+                       </div>
+                     </th>
+                     <th>
+                       <div class="any-d-flex any-ai-center">
+                         <img src="assets/images/browsers/safari.png" alt="safari" style="width: 1.5rem;" class="any-mr-2">
+                         Safari
+                       </div>
+                     </th>
+                     <th>
+                       <div class="any-d-flex any-ai-center">
+                         <img src="assets/images/browsers/opera.png" alt="opera" style="width: 1.5rem;" class="any-mr-2">
+                         Opera
+                       </div>
+                     </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>IE11, Edge</td>
+                        <td>Last 2 versions</td>
+                          <td>Last 2 versions</td>
+                          <td>Last 2 versions</td>
+                          <td>Last 2 versions</td>
+                      </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
         `;

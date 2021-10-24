@@ -1,9 +1,9 @@
-import GetStarted from "./views/GetStarted.js";
+import GetStarted from "./views/GetStarted/GetStarted.js";
 import Listbox from "./views/Listbox.js";
 import Dropdown from "./views/Dropdown.js";
 import VirtualScroller from "./views/VirtualScroller.js";
 import InputText from "./views/InputText.js";
-import Checkbox from "./views/Checkbox.js";
+import Checkbox from "./views/Checkbox/Checkbox.js";
 // import { Prism } from "prismjs/prism.js";
 
 const pathToRegex = (path) =>

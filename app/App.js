@@ -118,7 +118,7 @@ const router = () => {
     }
 
     view.executeScript();
-    hideMenu()
+    hideMenu();
   }, 100);
 };
 

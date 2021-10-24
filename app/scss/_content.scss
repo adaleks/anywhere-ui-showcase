@@ -55,6 +55,17 @@
                 .any-button-icon-only {
                     padding: .5rem 0;
                 }
+
+                a {
+                    &:hover {
+                        border-radius: 50%;
+                        height: 2.357 rem;
+
+                        svg * {
+                            fill: var(--primary-color)
+                        }
+                    }
+                }
             }
 
             .app-inputstyleswitch {

@@ -186,6 +186,13 @@ code[class*=language] {
 .layout-content .content-section.introduction app-demoActions .any-button-icon-only {
   padding: 0.5rem 0;
 }
+.layout-content .content-section.introduction app-demoActions a:hover {
+  border-radius: 50%;
+  height: 2.357 rem;
+}
+.layout-content .content-section.introduction app-demoActions a:hover svg * {
+  fill: var(--primary-color);
+}
 .layout-content .content-section.introduction .app-inputstyleswitch {
   margin-left: 2rem;
 }
@@ -448,6 +455,14 @@ code[class*=language] {
 
 .any-mr-2 {
   margin-right: 0.5rem !important;
+}
+
+.any-ai-end {
+  align-items: flex-end;
+}
+
+.any-jc-end {
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 960px) {

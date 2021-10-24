@@ -1,7 +1,7 @@
-import AbstractView from "./AbstractView.js";
+import AbstractView from "../AbstractView.js";
 import {
   Cities
-} from "../data/Cities.js";
+} from "../../data/Cities.js";
 
 export default class extends AbstractView {
   constructor(params) {
@@ -84,34 +84,9 @@ export default class extends AbstractView {
   }
 
   async getHtml() {
-    return `
-            <div class="content-section introduction">
-              <div class="feature-intro">
-                <h1>Listbox</h1>
-                <p>Listbox is used to select one or more values from a list of items.</p>
-              </div>
-            </div>
-            <div class="content-section">
-              <div class="full-card">
-                <h5>Single</h5>
-                <any-listbox class="lb1"></any-listbox>
-                <h5>Advanced with Templating, Filtering and Multiple Selection</h5>
-                <any-listbox class="lb2">
-                  <div slot="item">
-                    <div style="display: flex; align-items: center;">
-                      <img part="flag-#=item.value.countryCode#" class="flag flag-#=item.value.countryCode#"
-                        style="margin-right: 10px; width: 20px;" src="assets/images/flag/flag_placeholder.png"
-                        alt="#=item.value.country# Flag">
-                      <b>#=item.label# (#=item.value.country#)</b>
-                    </div>
-                  </div>
-                </any-listbox>
-                <h5>Virtual Scroll (10000 Items)</h5>
-                <any-listbox class="vlb1">
-                  <div slot="item">#=item.label#</div>
-                </any-listbox>
-              </div>
-            </div>
-        `;
+    return fetch('app/views/Listbox/Listbox.html')
+      .then(data => {
+        return data.text();
+      });
   }
 }

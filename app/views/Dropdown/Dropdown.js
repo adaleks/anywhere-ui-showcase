@@ -1,7 +1,7 @@
-import AbstractView from "./AbstractView.js";
+import AbstractView from "../AbstractView.js";
 import {
   Cities
-} from "../data/Cities.js";
+} from "../../data/Cities.js";
 
 export default class extends AbstractView {
   constructor(params) {
@@ -87,44 +87,48 @@ export default class extends AbstractView {
   }
 
   async getHtml() {
-    return `
-            <div class="content-section introduction">
-              <div class="feature-intro">
-                <h1>Dropdown</h1>
-                <p>Dropdown is used to select an item from a list of options.</p>
-              </div>
-            </div>
-            <div class="content-section">
-              <div class="full-card">
-                <h5>Basic</h5>
-                <any-dropdown class="dd1" placeholder="Select a Country" show-clear="true">
-                </any-dropdown>
-                <h5>Advanced with Templating, Filtering and Clear Icon</h5>
-                <any-dropdown class="dd2" placeholder="Select a City" show-clear="true">
-                  <div slot="selectedItem">
-                    <div style="display: flex; align-items: center;">
-                      <img part="flag-#=item.value.countryCode#" class="flag flag-#=item.value.countryCode#"
-                        style="margin-right: 10px; width: 20px;" src="assets/images/flag/flag_placeholder.png"
-                        alt="#=item.value.country# Flag">
-                      <b>#=item.label#</b>
-                    </div>
-                  </div>
-                  <div slot="item">
-                    <div style="display: flex; align-items: center;">
-                      <img part="flag-#=item.value.countryCode#" class="flag flag-#=item.value.countryCode#"
-                        style="margin-right: 10px; width: 20px;" src="assets/images/flag/flag_placeholder.png"
-                        alt="#=item.value.country# Flag">
-                      <b>#=item.label# (#=item.value.code#)</b>
-                    </div>
-                  </div>
-                </any-dropdown>
-                <h5>Virtual Scroll (10000 Items)</h5>
-                <any-dropdown class="dd3" placeholder="Select Item" show-clear="true">
-                  <div slot="item">#=item.label#</div>
-                  <div slot="selectedItem">#=item.value#</div>
-                </any-dropdown>
-              </div>
-            </div>
-        `;
+    return fetch('app/views/Dropdown/Dropdown.html')
+      .then(data => {
+        return data.text();
+      });
+    // return `
+    //         <div class="content-section introduction">
+    //           <div class="feature-intro">
+    //             <h1>Dropdown</h1>
+    //             <p>Dropdown is used to select an item from a list of options.</p>
+    //           </div>
+    //         </div>
+    //         <div class="content-section">
+    //           <div class="full-card">
+    //             <h5>Basic</h5>
+    //             <any-dropdown class="dd1" placeholder="Select a Country" show-clear="true">
+    //             </any-dropdown>
+    //             <h5>Advanced with Templating, Filtering and Clear Icon</h5>
+    //             <any-dropdown class="dd2" placeholder="Select a City" show-clear="true">
+    //               <div slot="selectedItem">
+    //                 <div style="display: flex; align-items: center;">
+    //                   <img part="flag-#=item.value.countryCode#" class="flag flag-#=item.value.countryCode#"
+    //                     style="margin-right: 10px; width: 20px;" src="assets/images/flag/flag_placeholder.png"
+    //                     alt="#=item.value.country# Flag">
+    //                   <b>#=item.label#</b>
+    //                 </div>
+    //               </div>
+    //               <div slot="item">
+    //                 <div style="display: flex; align-items: center;">
+    //                   <img part="flag-#=item.value.countryCode#" class="flag flag-#=item.value.countryCode#"
+    //                     style="margin-right: 10px; width: 20px;" src="assets/images/flag/flag_placeholder.png"
+    //                     alt="#=item.value.country# Flag">
+    //                   <b>#=item.label# (#=item.value.code#)</b>
+    //                 </div>
+    //               </div>
+    //             </any-dropdown>
+    //             <h5>Virtual Scroll (10000 Items)</h5>
+    //             <any-dropdown class="dd3" placeholder="Select Item" show-clear="true">
+    //               <div slot="item">#=item.label#</div>
+    //               <div slot="selectedItem">#=item.value#</div>
+    //             </any-dropdown>
+    //           </div>
+    //         </div>
+    //     `;
   }
 }

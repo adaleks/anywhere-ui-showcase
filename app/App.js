@@ -1,8 +1,8 @@
 import GetStarted from "./views/GetStarted/GetStarted.js";
-import Listbox from "./views/Listbox.js";
-import Dropdown from "./views/Dropdown.js";
-import VirtualScroller from "./views/VirtualScroller.js";
-import InputText from "./views/InputText.js";
+import Listbox from "./views/Listbox/Listbox.js";
+import Dropdown from "./views/Dropdown/Dropdown.js";
+import VirtualScroller from "./views/VirtualScroller/VirtualScroller.js";
+import InputText from "./views/InputText/InputText.js";
 import Checkbox from "./views/Checkbox/Checkbox.js";
 // import { Prism } from "prismjs/prism.js";
 

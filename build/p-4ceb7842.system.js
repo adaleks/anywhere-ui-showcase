@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){var t=e("r",(function(e,t,u,a,i){if(e||n(t)){var r=t.querySelector("input.aux-input");if(!r){r=t.ownerDocument.createElement("input");r.type="hidden";r.classList.add("aux-input");t.appendChild(r)}r.disabled=i;r.name=u;r.value=a||""}}));var n=e("h",(function(e){return!!e.shadowRoot&&!!e.attachShadow}))}}}));

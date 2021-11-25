@@ -1,7 +1,7 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <style>
-    @import "/app/css/app.css";
+    @import "/anywhere-ui-showcase/app/css/app.css";
     :host {
         display: block;
     }
@@ -171,7 +171,7 @@ template.innerHTML = `
                 <div class="any-grid free-themes">
                     <div class="any-col-3">
                         <button class="any-link" data-select-theme="anywhere-default">
-                            <img src="assets/images/themes/anywhere-default-violet.png" alt="Adaleks Violet" />
+                            <img src="/anywhere-ui-showcase/assets/images/themes/anywhere-default-violet.png" alt="Adaleks Violet" />
                         </button>
                         <span>Violet</span>
                     </div>
@@ -180,13 +180,13 @@ template.innerHTML = `
                 <div class="any-grid free-themes">
                     <div class="any-col-3">
                         <button class="any-link" data-select-theme="bootstrap4-light-blue">
-                            <img src="assets/images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" />
+                            <img src="/anywhere-ui-showcase/assets/images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" />
                         </button>
                         <span>Blue</span>
                     </div>
                     <div class="any-col-3">
                         <button class="any-link" data-select-theme="bootstrap4-dark-blue">
-                            <img src="assets/images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue" />
+                            <img src="/anywhere-ui-showcase/assets/images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue" />
                         </button>
                         <span>Blue</span>
                     </div>

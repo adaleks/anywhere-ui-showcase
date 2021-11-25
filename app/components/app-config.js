@@ -1,7 +1,7 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <style>
-    @import "/app/css/app.css";
+    @import "/anywhere-ui-showcase/app/css/app.css";
     :host {
         display: block;
     }

@@ -1,1 +1,0 @@
-const t=(t,n,u,p,a)=>{if(t||i(n)){let t=n.querySelector("input.aux-input");t||(t=n.ownerDocument.createElement("input"),t.type="hidden",t.classList.add("aux-input"),n.appendChild(t)),t.disabled=a,t.name=u,t.value=p||""}},i=t=>!!t.shadowRoot&&!!t.attachShadow;export{i as h,t as r}
